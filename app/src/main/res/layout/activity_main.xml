@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img4"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rampart"
+        android:textAlignment="center"
+        android:backgroundTint="#C88FF6"
+        android:paddingBottom="20dp"
+        android:backgroundTintMode="src_atop"
+        android:textColor="@android:color/background_dark"
+        android:text="BOUTIQUE"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#C88FF6"
+        android:backgroundTintMode="src_atop"
+        android:hint="Codigo"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCodigo"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#C88FF6"
+        android:backgroundTintMode="src_atop"
+        android:hint="Tipo de prenda"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTipo"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#C88FF6"
+        android:backgroundTintMode="src_atop"
+        android:hint="Color"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etColor"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#C88FF6"
+        android:backgroundTintMode="src_atop"
+        android:hint="Marca"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMarca"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#C88FF6"
+        android:backgroundTintMode="src_atop"
+        android:hint="Precio"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etExistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPrecio"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#C88FF6"
+        android:backgroundTintMode="src_atop"
+        android:hint="Existencias"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etExistencia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/btnGuardar"
+        android:text="Buscar" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etExistencia"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etExistencia"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/btnBuscar"
+        android:text="Actualizar" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etExistencia"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/btnActualizar"
+        android:text="Borrar" />
+
+    <ListView
+        android:id="@+id/lvProducto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/rubik"
+        android:layout_below="@+id/btnEliminar" />
+
+</RelativeLayout>
